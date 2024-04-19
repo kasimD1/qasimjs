@@ -115,7 +115,7 @@ const course={
 //console.log(course.instructor);
 // other suggested way to retrieve the imformation from the objects
 const {instructor:inst}=course;
-console.log(inst);
+//console.log(inst);
 // api json talk
 //json is like object with name
 // //{
@@ -125,13 +125,108 @@ console.log(inst);
 // }
 
 //functions 
-function saymyname() {
+// function saymyname() {
     
-    console.log("qasim");
-}
-saymyname();
-function addTwoNum(num1,num2) {
-    return num1+num2;
+//     console.log("qasim");
+// }
+// saymyname();
+// function addTwoNum(num1,num2) {
+//     return num1+num2;
+    
+// }
+// console.log(addTwoNum(3,5));
+// function usernameasked(username) {
+//     return `${username} has just logged in`;
+// }
+// const user=usernameasked("Quaid-e-Azam");
+// console.log(user);
+// function usernameasked(username) {
+//     return `${username} has just logged in`;
+// }
+// const user=usernameasked("");
+// console.log(user);
+// //expected output:  has just logged in
+// const user=usernameasked("Quaid-e-Azam");
+// console.log(user);
+// function usernameasked(username) {
+//     return `${username} has just logged in`;
+// }
+// const user=usernameasked();
+// console.log(user);
+// //expected output:  undefined has just logged in
+
+// function usernameasked(username) {
+//     if (username===undefined){
+//         console.log("please enter a valid username");
+//         return ;
+//     }
+//     return `${username} has just logged in`;
+// }
+// const user=usernameasked();
+// console.log(user);
+//expected output:  undefined has just logged in
+//best practice
+// function usernameasked(username) {
+//     if (!username){
+//         console.log("please enter a valid username");
+//         return ;
+//     }
+//     else if (!undefined){
+//     return `${username} has just logged in`;
+// }}
+// const user=usernameasked("qasim");
+// console.log(user);
+// if you want to get rid of unentered user name
+//use default value in the parameter if username is entered the value is overwritten , otherwise used default val
+// function usernameasked(username="quaid") {
+//     if (!username){
+//         console.log("please enter a valid username");
+//         return ;
+//     }
+//     else if (!undefined){
+//     return `${username} has just logged in`;
+// }}
+//const user=usernameasked(null);
+//console.log(user);
+//this will not work with the null and empty string
+//to calculate the cart item prices
+//...  is rest operator as well as spilts operator
+function calculateCartPrice(...num1) {
+    return num1;
     
 }
-console.log(addTwoNum(3,5));
+
+console.log(calculateCartPrice(2,4,5,6,7,8));
+
+function calculateCartPrice(v1,v2,...num1) {
+    return num1;
+    
+}
+
+console.log(calculateCartPrice(2,4,5,6,7,8));
+const user={
+    username:"qasim",
+    price:"999"
+}
+function objectHandling(anyobject) {
+   console.log( `username is ${anyobject.username} and the price is ${anyobject.price}`);
+    
+}
+//objectHandling(user);
+objectHandling({username:"quaid",price:"678"})// argument can be in the form of object
+const  array=[1,3,4,5,6,7,8];
+function secValue(getarray){
+    return array[1];
+}
+console.log(secValue(array));
+if (1){
+    let a=1
+    const b=2
+    var c=3 
+
+}
+//console.log(a);
+//console.log(b);
+console.log(c);
+//nature of console is differ from the nature of node code environment
+//fuctions done
