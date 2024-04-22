@@ -191,42 +191,139 @@ const {instructor:inst}=course;
 //this will not work with the null and empty string
 //to calculate the cart item prices
 //...  is rest operator as well as spilts operator
-function calculateCartPrice(...num1) {
-    return num1;
+// function calculateCartPrice(...num1) {
+//     return num1;
     
-}
+// }
 
-console.log(calculateCartPrice(2,4,5,6,7,8));
+// console.log(calculateCartPrice(2,4,5,6,7,8));
 
-function calculateCartPrice(v1,v2,...num1) {
-    return num1;
+// function calculateCartPrice(v1,v2,...num1) {
+//     return num1;
     
-}
+// }
 
-console.log(calculateCartPrice(2,4,5,6,7,8));
-const user={
-    username:"qasim",
-    price:"999"
-}
-function objectHandling(anyobject) {
-   console.log( `username is ${anyobject.username} and the price is ${anyobject.price}`);
+// console.log(calculateCartPrice(2,4,5,6,7,8));
+// const user={
+//     username:"qasim",
+//     price:"999"
+// }
+// function objectHandling(anyobject) {
+//    console.log( `username is ${anyobject.username} and the price is ${anyobject.price}`);
     
-}
+// }
 //objectHandling(user);
-objectHandling({username:"quaid",price:"678"})// argument can be in the form of object
-const  array=[1,3,4,5,6,7,8];
-function secValue(getarray){
-    return array[1];
-}
-console.log(secValue(array));
-if (1){
-    let a=1
-    const b=2
-    var c=3 
+// objectHandling({username:"quaid",price:"678"})// argument can be in the form of object
+// const  array=[1,3,4,5,6,7,8];
+// function secValue(getarray){
+//     return array[1];
+// }
+// console.log(secValue(array));
+// if (1){
+//     let a=1
+//     const b=2
+//     var c=3 
 
-}
+// }
 //console.log(a);
 //console.log(b);
-console.log(c);
+// console.log(c);
 //nature of console is differ from the nature of node code environment
 //fuctions done
+//a JavaScript function called add that takes two parameters (numbers) and returns their sum.
+// Create a function called multiply that takes three parameters (numbers) and returns their product.
+// Write a function called greet that takes a name as a parameter and returns a greeting message, such as "Hello, [name]!"
+// Define a function called calculateArea that takes the radius of a circle as a parameter and returns the area of the circle (π * radius^2).
+// Create a function called isEven that takes a number as a parameter and returns true if the number is even, otherwise returns false.
+// Write a function called capitalize that takes a string as a parameter and returns the same string with the first letter capitalized.
+
+//first
+// const sum =(num1,num2)=>(num1+num2);
+// console.log(sum(3,5));
+// //second
+// const multiply=(num1,num2,num3)=>(num1*num2*num3);
+// console.log(multiply(3,5,6));
+// //third
+// const greet=(name)=>(console.log(`Hello, ${name}`));
+// greet("qasim");
+// //forth
+// const calculateArea=(rad)=>(3.14*rad*rad);
+// console.log(calculateArea(2));
+// //fifth
+// const isEven=(num)=>(num%2===0);
+// console.log(isEven(7));
+// //sixth
+// const capatilize=(senten)=>{
+//     const firstword=senten.charAt(0);
+//     const capword=firstword.toUpperCase();
+//     const remainer=senten.slice(1);
+//     const sentence=capword+remainer;
+//     return sentence;
+
+// };
+// console.log(capatilize("my name is khan"));
+// //seventh
+// const reverseArray=(array)=>(array.reverse());
+// const array=[1,2,3,45,6];
+// console.log(reverseArray(array));
+//eight
+// const sumArray=(array)=>{
+//     for (let i = 0; i < array.length; i++) {
+//         const element=0;
+//         element=element + array [i];
+        
+//     }
+//     return element;
+// }
+// const array2=[1,2,3,4,5,44,3];
+// console.log(sumArray(array2));
+
+// Define a function called reverseArray that takes an array as a parameter and returns a new array with the elements reversed.
+// Create a function called sumArray that takes an array of numbers as a parameter and returns the sum of all the numbers in the array.
+// Write a function called filterEvens that takes an array of numbers as a parameter and returns a new array containing only the even numbers.
+// Define a function called findMax that takes an array of numbers as a parameter and returns the largest number in the array.
+
+// const array=[1,2,3,4,5,6];
+// const a=array.splice(2);
+// console.log(a);
+// //console.log(array.splice(2));
+// const arrayy=[1,23,45,6,77,4,2];
+// const b=array.splice(2);
+// // console.log(arrayy.slice(2));
+// console.log(b);
+// const array=[2,3,4,5,6];
+// const a=array.slice(1,3);
+// console.log(array);
+// console.log(a);
+// const array1=[2,3,4,5,6];
+// const b=array.splice(1,3);
+// console.log(array);
+// console.log(b);
+// Of course! Here's the information about `slice()` and `splice()` summarized in bullet points:
+
+// `slice()` Method:
+// - Used for extracting a portion of an array and returning a new array.
+// - Takes two optional parameters: start index and end index (end index is exclusive).
+// - If no parameters are provided, it returns a shallow copy of the original array.
+// - Does not mutate the original array.
+// - If only one parameter is provided, it extracts elements from the provided index to the end of the array.
+
+// `splice()` Method:
+// - Used for adding or removing elements from an array.
+// - Takes three parameters: start index, delete count, and optional elements to add.
+// - Modifies the original array.
+// - If the delete count is 0, no elements are removed but elements can still be added.
+// - If only one parameter is provided, it removes all elements from the provided index to the end of the array and returns them.
+
+// These methods offer different functionalities for manipulating arrays in JavaScript.
+//IIFE
+//named iife
+// (function chai(){
+//     console.log(`db connected`);
+
+// })();
+// //IIFE is used to prevent function from global garbage
+// //()()->this is iife
+// //()=>{}->this is arrow function
+// //unamed iife
+// ((name)=>{console.log(`db connected two ,${name}`);})("qasim");
