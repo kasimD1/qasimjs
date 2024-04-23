@@ -334,7 +334,6 @@ const {instructor:inst}=course;
 
 // Phase 1: Global Execution Context
 // The value of `this` keyword is set to Global Execution Context (which is an empty Object in NODE environment, & window object in browser environment)
-
 // Phase 2: Memory phase
 // During this phase, JS engine scans the code and assigns the initial values for the variables , functions, etc.. For variables they are 'undefined' and for functions they are set to their function definition
 
@@ -343,3 +342,38 @@ const {instructor:inst}=course;
 // 1. Memory phase 
 // 2. Execution phase 
 // The return value of the 'Function Execution' context is passed to the Global Execution Context
+// falsy values
+
+// false, 0, -0, BigInt 0n, "", null, undefined, NaN
+
+//truthy values
+// "0", 'false', " ", [], {}, function(){}
+
+// if (userEmail.length === 0) {
+//     console.log("Array is empty");
+// }
+// const val=null??10;
+// console.log(val);
+//nullsing coalsing operator
+// const val=5??10;
+// console.log(val);
+// const val1=undefined??10;
+// console.log(val1);
+// //tertiary operator
+// const teaprice=10;
+// teaprice>85 ? console.log("price is above 85"):console.log("price is under 85");
+// const emptyObj = {}
+// if (Object.keys(emptyObj).length === 0) {
+//     console.log("Object is empty");
+// }
+// // Nullish Coalescing Operator (??): null undefined
+// let val1;
+// // val1 = 5 ?? 10
+// // val1 = null ?? 10
+// // val1 = undefined ?? 15
+// val1 = null ?? 10 ?? 2
+// console.log(val1);
+// // Terniary Operator
+// // condition ? true : false
+// const iceTeaPrice = 100
+// iceTeaPrice <= 80 ? console.log("less than 80") : console.log("more than 80")
